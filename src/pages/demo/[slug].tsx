@@ -40,7 +40,7 @@ const DemoPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navigation />
+      <Navigation restaurantName={restaurant.name} />
       <main className="flex-grow">
         <Hero
           name={restaurant.name}
@@ -53,7 +53,7 @@ const DemoPage: React.FC = () => {
           phone={restaurant.phone}
         />
         <FeaturedDishes />
-        <Contact whatsappLink={whatsappLink} />
+        <Contact whatsappLink={whatsappLink} restaurantInfo={{ address: restaurant.address, phone: restaurant.phone }} />
       </main>
     </div>
   );

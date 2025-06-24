@@ -16,7 +16,10 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/demo/:slug" element={<DemoPage />} />
-        <Route path="/restaurants/:restaurantId" element={<RestaurantDetail />} />
+        <Route
+          path="/restaurants/:restaurantId"
+          element={<RestaurantDetail />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -49,9 +49,9 @@ const Hero: React.FC<HeroProps> = ({ name, image, foodCategories }) => {
 
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 animate-fade-in-up">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in opacity-0 animate-delay-300">
-          The Best BBQ{" "}
+          {name}{' '}
           <span className="text-orange-400 animate-pulse">
-            You'll Ever Taste
+            {foodCategories.join(', ')}
           </span>
         </h1>
         <p className="text-lg md:text-xl mb-8 animate-fade-in opacity-0 animate-delay-500 max-w-2xl mx-auto leading-relaxed">

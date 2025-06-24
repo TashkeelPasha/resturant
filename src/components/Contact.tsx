@@ -1,14 +1,14 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import restaurants from "../../data/restaurants.json";
 
 interface ContactProps {
   whatsappLink: string;
+  restaurantInfo: {
+    address: string;
+    phone: string;
+  };
 }
 
-const Contact: React.FC<ContactProps> = ({ whatsappLink }) => {
-  const restaurantId = "abc123"; // Assuming this is the relevant restaurant
-  const restaurantInfo = restaurants[restaurantId];
-
+const Contact: React.FC<ContactProps> = ({ whatsappLink, restaurantInfo }) => {
   return (
     <div>
       {/* Contact Info Section */}

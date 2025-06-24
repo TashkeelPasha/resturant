@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import restaurantsData from '../../data/restaurants.json';
+interface NavigationProps {
+  restaurantName?: string;
+}
 
-const Navigation = () => {
+const Navigation: React.FC<NavigationProps> = ({ restaurantName }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -25,7 +27,10 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-white text-3xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-600 drop-shadow-lg">{restaurantsData.abc123.name}</span>
+            <span className="text-white text-3xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-600 drop-shadow-lg">
+              {restaurantName ||
+                "Delicious Bites"}
+            </span>
           </div>
 
           <div className="hidden md:block">
