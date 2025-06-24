@@ -1,0 +1,15 @@
+{
+  "abc123": {
+    "name": "Pizza Empire",
+    "phone": "+92 300 1234567",
+    "address": "Block 7, Gulshan-e-Iqbal, Karachi",
+    "foodCategories": ["Pizza", "Burgers", "Pasta"],
+    "image": "/logos/pizza-empire.png"
+  },
+  "xyz789": {
+    "name": "Biryani Express",
+    "phone": "+92 321 5554444",
+    "address": "F10 Markaz, Islamabad",
+    "foodCategories": ["Biryani", "Kebabs", "Drinks"]
+  }
+}
