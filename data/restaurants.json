@@ -11,5 +11,11 @@
     "phone": "+92 321 5554444",
     "address": "F10 Markaz, Islamabad",
     "foodCategories": ["Biryani", "Kebabs", "Drinks"]
+  },
+  "garmai_kitchen": {
+    "name": "Garmai Kitchen",
+    "phone": "+14195082600",
+    "address": "7579 Braeburn Ct, Blacklick, OH 43004, United States",
+    "foodCategories": []
   }
 }
