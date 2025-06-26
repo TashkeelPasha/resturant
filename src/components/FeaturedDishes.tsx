@@ -15,7 +15,7 @@ const FeaturedDishes = () => {
           culinary experience.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.entries(restaurantsData).map(([id, restaurant]) => (
+          {Object.entries(restaurantsData).slice(0, 6).map(([id, restaurant]) => (
             <Link to={`/restaurants/${id}`} key={id}>
               <Card
                 className="bg-gray-800 border-gray-700 text-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 animate-slide-in-bottom"

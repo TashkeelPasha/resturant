@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ name, image, foodCategories }) => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${
-            image || "https://images.unsplash.com/photo-1544025162-d76694265947"
+            image || "/hero_cover.webp"
           }')`,
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
@@ -49,9 +49,9 @@ const Hero: React.FC<HeroProps> = ({ name, image, foodCategories }) => {
 
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 animate-fade-in-up">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in opacity-0 animate-delay-300">
-          {name}{' '}
+          {name}{" "}
           <span className="text-orange-400 animate-pulse">
-            {foodCategories.join(', ')}
+            {foodCategories.join(", ")}
           </span>
         </h1>
         <p className="text-lg md:text-xl mb-8 animate-fade-in opacity-0 animate-delay-500 max-w-2xl mx-auto leading-relaxed">
